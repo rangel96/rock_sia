@@ -1,0 +1,11 @@
+$height-footer: 8rem;
+
+.vh-fullscreen {
+  min-height: calc(100vh - $height-footer); /* altura de la ventana del navegador menos altura del footer */
+}
+
+@media (max-width: 768px) {
+  .vh-fullscreen {
+    margin-bottom: $height-footer;
+  }
+}
